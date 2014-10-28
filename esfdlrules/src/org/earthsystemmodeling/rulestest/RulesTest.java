@@ -48,13 +48,13 @@ public class RulesTest {
 		//ruleEngine.infer();  //does the above 4
 		
 		//add a new rule
-		String ruleText = "simple:supportsPlatform(?mi2, ?plat) ^ simple:supportsPlatform(?mi1, ?plat) -> simple:compatible(?mi1, ?mi2)";
+		String ruleText = "esfdl:supportsPlatform(?mi2, ?plat) ^ esfdl:supportsPlatform(?mi1, ?plat) -> esfdl:compatible(?mi1, ?mi2)";
 		swrlOntology.createSWRLRule("RuleName", ruleText, "Comment", true);
 		
-		IRI modelingInfrastructure = IRI.create("http://www.earthsystemcog.org/projects/es-fdl/simple.owl#ModelingInfrastructure");
+		IRI modelingInfrastructure = IRI.create("http://www.earthsystemcog.org/projects/es-fdl/esfdl.owl#ModelingInfrastructure");
 		OWLClass classMI = manager.getOWLDataFactory().getOWLClass(modelingInfrastructure);
 		
-		IRI compatIRI = IRI.create("http://www.earthsystemcog.org/projects/es-fdl/simple.owl#compatible");
+		IRI compatIRI = IRI.create("http://www.earthsystemcog.org/projects/es-fdl/esfdl.owl#compatible");
 		OWLObjectProperty compatProp = manager.getOWLDataFactory().getOWLObjectProperty(compatIRI);
 		
 		Set<OWLIndividual> instances = classMI.getIndividuals(owlOntology);
