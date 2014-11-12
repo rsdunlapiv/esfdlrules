@@ -1,0 +1,2268 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.pizza.com/ontologies/pizza.owl/2014/10/untitled-ontology-25"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.pizza.com/ontologies/pizza.owl/2014/10/untitled-ontology-25">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#BasicCapabilities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChangeManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClientLanguageBindings"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ControlRegime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CoordinateDimensions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CoordinateSystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataExchangeMechanism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DecompositionSpec_Transport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DecompositionType_Transport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DesignIntent_General"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeveloperDocumentation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeveloperSupport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DistanceMeasure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Documentation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DriverCustomization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExternalSoftwareDependencies"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FieldPriming_Transport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#General"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GridDescription"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Implementation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImplementationLanguage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Licence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MaxPolygonEdges"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mediation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MetaDataOutput"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MetaDataOutputFormats"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ModelComponentAbstraction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ModelComponentRef"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ModelComponents"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ModelExecutionConcurrency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ModelMetaDataRuntimeQuery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ModelMetaDataStaticQuery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ModelMetadataFlow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ModelMetadataProvision"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ModelMetadataProvisionFormats"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ModellingInfrastructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MultiExecutable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Opensource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Options"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Options_GridDescription"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Options_Transport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ParallelLibrary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parallelism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Poles"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Repartitioning_Transport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Representation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SparseMatrixMultiplication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Support"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SupportedModels"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SupportedOperatingSystems"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SupportedPlatforms"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SwappableComponents"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Temporal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tests"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TopologicalDimensions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TopologicalStructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transformations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserSupport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WeightApplicationExecution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WeightApplicationInterpolationMethod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WeightGenerationExecution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WeightGenerationInterpolationMethod"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBasicCapabilities"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasClientLanguageBindings"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasControlRegime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCoordinateDimensions"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCoordinateSystems"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDataExchangeMechanism"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDesignIntent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDocumentationTypes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDriverCustomization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasExternalSoftwareDependencies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFieldPrimings"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGridDescriptionOptions"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasImplementationLanguages"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLicence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMaxPolygonEdges"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMetaDataOutput"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMetaDataOutputFormat"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasModelComponentRef"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasModelExecutionConcurrency"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasModelMetaDataFlow"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasModelMetaDataProvision"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasModelMetaDataProvisionFormats"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasModelMetaDataRuntimeQuery"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasModelMetaDataStaticQuery"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMultiExecutables"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOptions"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasParallelLibraries"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasParallelism"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTests"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTopologicalDimensions"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTopologicalStructure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTransportDecompositionSpec"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTransportDecompositionType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTransportOptions"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasUserSupportTypes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWeightApplicationExecutionTypes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWeightApplicationInterpolationMethods"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWeightGenerationExecutionTypes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWeightGenerationInterpolationMethods"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#measuresDistanceIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supportsChangeManagementTypes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supportsCompilers"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supportsMediation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supportsModels"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supportsOperatingSystems"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supportsPlatforms"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supportsRepartitioningTypes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supportsTemporals"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Angle_Conversion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Apache_Licence_2.0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Application_of_spatial_interpolation_weights"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BSD_2-Clause_Licence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BSD_3-Clause_Licence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Build_and_or_Configuration_management"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CSDMS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cartesian"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Contiguous_blocks"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Defines_an_interface_for_models"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ESMF"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GNU_General_Public_Licence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GNU_Lesser_General_Public_Licence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Generation_of_spatial_interpolation_weights"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Linux"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MCT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MIT_Licence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MPI"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MPI_dem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mac"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OASIS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#One_D"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#One_D_segments"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OpenACC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OpenMP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Programming_Language_interoperability"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Provides_data_structures_for_storing_model_fields"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Semantic_mediation_of_model_weights"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Source_code_annotations"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Temporal_Interpolation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Three_D"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Transfer_of_field_data_between_models"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Two_D"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Unit_Conversion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Windows"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Workflow"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#accumulation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#adaptive"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#adaptive_coupling_frequency"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#an_identifier_such_as_an_integer_or_string"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#an_instance_of_a_Fortran_derived_type_or_C_struct"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#an_object_in_an_object-oriented_language"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#arbitrary_user_assigned"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#averaging"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#between_different_decompositions"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bilinear_trilinear"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bilinear_trilinear_waim"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bundles"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#by_changing_configuration_metadata"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#by_changing_model_field_data_dependencies"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#by_specializing_a_generic_driver"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#c"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#c_clb"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cloud"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cluster"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#completion_of_coupling_fields_with_external_data"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#comprehensive_API_Reference"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#conditional_target"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#coupler_is_a_seperate_executable"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cplusplus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cplusplus_clb"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#csharp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#csharp_clb"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#described_globally"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#described_locally"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#desktop_laptop"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#directly_in_source_code_eg_API_calls"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#email"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#entire_application_is_a_single_executable"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#event_based"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#example_application_code"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#execution_methods"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#execution_methods_sq"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#explicit_control_control_thread_is_in_a_driver_written_mostly_entirely_by_the_user"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#explicit_control_control_thread_is_in_a_generic_driver"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#explicit_control_control_thread_is_in_a_generic_driver_that_can_be_customized_specialized_by_user"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#extrapolation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#extrapolation_outside_source_domain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#extrapolation_outside_source_domain_waim"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#field_combination_merging"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#file"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#file_to_file"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#first_order_conservative"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#first_order_conservative_wain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fortran"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fortran_clb"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#forum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#from_constant_or_function"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#from_file"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#from_memory"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#great_circle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#higher_order_conservative"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#higher_order_conservative_wain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#higher_order_non_conservative"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#higher_order_non_conservative_wain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#implicit_control_model_retain_control_and_control_sequence_is_determined_by_data_dependencies"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#in_a_standardized_format"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#in_an_infrastructure_specific_format"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#interpolation_linear"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#interpolation_quadratic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#interpolation_stairstep"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#issue_tracker"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#java"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#java_clb"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#land_ocean_coastline_consistency_checking"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#list_of_input_physical_fields"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#list_of_input_physical_fields_sq"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#list_of_output_physical_fields"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#list_of_output_physical_fields_sq"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#location_stream"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#logically_rectangular"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#masking"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mechanism_for_community_contribution"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mediates_between_parallel_and_serial_codes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#metadata_flows_from_driver_infrastructure_to_model_components"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#metadata_flows_from_model_components_to_infrastructure_driver"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#minimum_or_maximum_in_time"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#models_are_seperate_executables"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#models_can_execute_concurrently"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#models_can_execute_sequentially"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#multi_tile"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#multiprocessing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#multithreading"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nearest_neighbour"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nearest_neighbour_waim"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nesting"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#non_conformal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#non_geometrical"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#non_geometrical_waim"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#offline_parallel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#offline_serial"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#one_D"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#one_to_many"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#online"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#online_parallel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#online_reusable"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#online_serial"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#phone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#process_to_prioritize_user_requests"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#properties_of_the_numerical_grid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#properties_of_the_numerical_grid_sq"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#provides_a_software_framework"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#provides_data_structures_for_describing_numerical_grids"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pthreads"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#python"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#python_clb"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#read_from_a_configuration_file_in_an_infrastructure-specific_format"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#read_from_configuration_file_in_a_standard_format"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#shared_memory"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#spherical"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#straight_line"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#subroutine_or_method_argument_passing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#supports_parallelism"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#system_tests"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#system_tests_T"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#temporal_metadata"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#temporal_metadata_sq"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#three_D"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#time_stepping_method"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#time_stepping_method_sq"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#training_courses"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#two_D"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ungridded_dimensions"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#unit_conversion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#unit_tests"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#unit_tests_T"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#unstructured"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#user_guide_tutorials"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#vector_fields"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#version_control"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#web_request"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#workshops"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#BasicCapabilities"/>
+        <Class IRI="#General"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChangeManagement"/>
+        <Class IRI="#UserSupport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClientLanguageBindings"/>
+        <Class IRI="#Implementation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ControlRegime"/>
+        <Class IRI="#ModelComponents"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CoordinateDimensions"/>
+        <Class IRI="#GridDescription"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CoordinateSystem"/>
+        <Class IRI="#GridDescription"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataExchangeMechanism"/>
+        <Class IRI="#Implementation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DecompositionSpec_Transport"/>
+        <Class IRI="#Transport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DecompositionType_Transport"/>
+        <Class IRI="#Transport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DesignIntent_General"/>
+        <Class IRI="#General"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeveloperDocumentation"/>
+        <Class IRI="#DeveloperSupport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DistanceMeasure"/>
+        <Class IRI="#GridDescription"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Documentation"/>
+        <Class IRI="#UserSupport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DriverCustomization"/>
+        <Class IRI="#ModelComponents"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExternalSoftwareDependencies"/>
+        <Class IRI="#General"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FieldPriming_Transport"/>
+        <Class IRI="#Transport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImplementationLanguage"/>
+        <Class IRI="#Implementation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Licence"/>
+        <Class IRI="#General"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaxPolygonEdges"/>
+        <Class IRI="#GridDescription"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mediation"/>
+        <Class IRI="#Transformations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MetaDataOutput"/>
+        <Class IRI="#ModelComponents"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MetaDataOutputFormats"/>
+        <Class IRI="#ModelComponents"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ModelComponentAbstraction"/>
+        <Class IRI="#ModelComponents"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ModelComponentRef"/>
+        <Class IRI="#ModelComponents"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ModelExecutionConcurrency"/>
+        <Class IRI="#Implementation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ModelMetaDataRuntimeQuery"/>
+        <Class IRI="#ModelComponents"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ModelMetaDataStaticQuery"/>
+        <Class IRI="#ModelComponents"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ModelMetadataFlow"/>
+        <Class IRI="#ModelComponents"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ModelMetadataProvision"/>
+        <Class IRI="#ModelComponents"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ModelMetadataProvisionFormats"/>
+        <Class IRI="#ModelComponents"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MultiExecutable"/>
+        <Class IRI="#Implementation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Opensource"/>
+        <Class IRI="#General"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Options"/>
+        <Class IRI="#Representation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Options_GridDescription"/>
+        <Class IRI="#GridDescription"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Options_Transport"/>
+        <Class IRI="#Transport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ParallelLibrary"/>
+        <Class IRI="#Implementation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parallelism"/>
+        <Class IRI="#Implementation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Poles"/>
+        <Class IRI="#GridDescription"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Repartitioning_Transport"/>
+        <Class IRI="#Transport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SparseMatrixMultiplication"/>
+        <Class IRI="#Transformations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Support"/>
+        <Class IRI="#UserSupport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SupportedModels"/>
+        <Class IRI="#General"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SupportedOperatingSystems"/>
+        <Class IRI="#Implementation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SupportedPlatforms"/>
+        <Class IRI="#Implementation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SwappableComponents"/>
+        <Class IRI="#Implementation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Temporal"/>
+        <Class IRI="#Transformations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tests"/>
+        <Class IRI="#DeveloperSupport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TopologicalDimensions"/>
+        <Class IRI="#Representation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TopologicalStructure"/>
+        <Class IRI="#GridDescription"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WeightApplicationExecution"/>
+        <Class IRI="#Transformations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WeightApplicationInterpolationMethod"/>
+        <Class IRI="#Transformations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WeightGenerationExecution"/>
+        <Class IRI="#Transformations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WeightGenerationInterpolationMethod"/>
+        <Class IRI="#Transformations"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#BasicCapabilities"/>
+        <Class IRI="#DesignIntent_General"/>
+        <Class IRI="#ExternalSoftwareDependencies"/>
+        <Class IRI="#Licence"/>
+        <Class IRI="#Opensource"/>
+        <Class IRI="#SupportedModels"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ChangeManagement"/>
+        <Class IRI="#Documentation"/>
+        <Class IRI="#Support"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ClientLanguageBindings"/>
+        <Class IRI="#DataExchangeMechanism"/>
+        <Class IRI="#ImplementationLanguage"/>
+        <Class IRI="#ModelExecutionConcurrency"/>
+        <Class IRI="#MultiExecutable"/>
+        <Class IRI="#ParallelLibrary"/>
+        <Class IRI="#Parallelism"/>
+        <Class IRI="#SupportedOperatingSystems"/>
+        <Class IRI="#SupportedPlatforms"/>
+        <Class IRI="#SwappableComponents"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ControlRegime"/>
+        <Class IRI="#DriverCustomization"/>
+        <Class IRI="#MetaDataOutput"/>
+        <Class IRI="#MetaDataOutputFormats"/>
+        <Class IRI="#ModelComponentAbstraction"/>
+        <Class IRI="#ModelComponentRef"/>
+        <Class IRI="#ModelMetaDataRuntimeQuery"/>
+        <Class IRI="#ModelMetaDataStaticQuery"/>
+        <Class IRI="#ModelMetadataFlow"/>
+        <Class IRI="#ModelMetadataProvision"/>
+        <Class IRI="#ModelMetadataProvisionFormats"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CoordinateDimensions"/>
+        <Class IRI="#CoordinateSystem"/>
+        <Class IRI="#DistanceMeasure"/>
+        <Class IRI="#MaxPolygonEdges"/>
+        <Class IRI="#Options_GridDescription"/>
+        <Class IRI="#Poles"/>
+        <Class IRI="#TopologicalStructure"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CoordinateDimensions"/>
+        <Class IRI="#CoordinateSystem"/>
+        <Class IRI="#DistanceMeasure"/>
+        <Class IRI="#Options_GridDescription"/>
+        <Class IRI="#TopologicalStructure"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CoordinateDimensions"/>
+        <Class IRI="#CoordinateSystem"/>
+        <Class IRI="#DistanceMeasure"/>
+        <Class IRI="#TopologicalStructure"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DecompositionSpec_Transport"/>
+        <Class IRI="#DecompositionType_Transport"/>
+        <Class IRI="#FieldPriming_Transport"/>
+        <Class IRI="#Options_Transport"/>
+        <Class IRI="#Repartitioning_Transport"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DeveloperDocumentation"/>
+        <Class IRI="#Tests"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DeveloperSupport"/>
+        <Class IRI="#General"/>
+        <Class IRI="#GridDescription"/>
+        <Class IRI="#Implementation"/>
+        <Class IRI="#ModelComponents"/>
+        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#Representation"/>
+        <Class IRI="#Transformations"/>
+        <Class IRI="#Transport"/>
+        <Class IRI="#UserSupport"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Mediation"/>
+        <Class IRI="#SparseMatrixMultiplication"/>
+        <Class IRI="#Temporal"/>
+        <Class IRI="#WeightApplicationExecution"/>
+        <Class IRI="#WeightApplicationInterpolationMethod"/>
+        <Class IRI="#WeightGenerationExecution"/>
+        <Class IRI="#WeightGenerationInterpolationMethod"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Mediation"/>
+        <Class IRI="#Temporal"/>
+        <Class IRI="#WeightApplicationExecution"/>
+        <Class IRI="#WeightApplicationInterpolationMethod"/>
+        <Class IRI="#WeightGenerationExecution"/>
+        <Class IRI="#WeightGenerationInterpolationMethod"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Options"/>
+        <Class IRI="#TopologicalDimensions"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#BasicCapabilities"/>
+        <NamedIndividual IRI="#Angle_Conversion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Licence"/>
+        <NamedIndividual IRI="#Apache_Licence_2.0"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BasicCapabilities"/>
+        <NamedIndividual IRI="#Application_of_spatial_interpolation_weights"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Licence"/>
+        <NamedIndividual IRI="#BSD_2-Clause_Licence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Licence"/>
+        <NamedIndividual IRI="#BSD_3-Clause_Licence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BasicCapabilities"/>
+        <NamedIndividual IRI="#Build_and_or_Configuration_management"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModellingInfrastructure"/>
+        <NamedIndividual IRI="#CSDMS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CoordinateSystem"/>
+        <NamedIndividual IRI="#Cartesian"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DecompositionType_Transport"/>
+        <NamedIndividual IRI="#Contiguous_blocks"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BasicCapabilities"/>
+        <NamedIndividual IRI="#Defines_an_interface_for_models"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModellingInfrastructure"/>
+        <NamedIndividual IRI="#ESMF"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Licence"/>
+        <NamedIndividual IRI="#GNU_General_Public_Licence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Licence"/>
+        <NamedIndividual IRI="#GNU_Lesser_General_Public_Licence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BasicCapabilities"/>
+        <NamedIndividual IRI="#Generation_of_spatial_interpolation_weights"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SupportedOperatingSystems"/>
+        <NamedIndividual IRI="#Linux"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModellingInfrastructure"/>
+        <NamedIndividual IRI="#MCT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Licence"/>
+        <NamedIndividual IRI="#MIT_Licence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ParallelLibrary"/>
+        <NamedIndividual IRI="#MPI"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DataExchangeMechanism"/>
+        <NamedIndividual IRI="#MPI_dem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SupportedOperatingSystems"/>
+        <NamedIndividual IRI="#Mac"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModellingInfrastructure"/>
+        <NamedIndividual IRI="#OASIS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CoordinateDimensions"/>
+        <NamedIndividual IRI="#One_D"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DecompositionType_Transport"/>
+        <NamedIndividual IRI="#One_D_segments"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ParallelLibrary"/>
+        <NamedIndividual IRI="#OpenACC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ParallelLibrary"/>
+        <NamedIndividual IRI="#OpenMP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BasicCapabilities"/>
+        <NamedIndividual IRI="#Programming_Language_interoperability"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BasicCapabilities"/>
+        <NamedIndividual IRI="#Provides_data_structures_for_storing_model_fields"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BasicCapabilities"/>
+        <NamedIndividual IRI="#Semantic_mediation_of_model_weights"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModelMetadataProvision"/>
+        <NamedIndividual IRI="#Source_code_annotations"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BasicCapabilities"/>
+        <NamedIndividual IRI="#Temporal_Interpolation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CoordinateDimensions"/>
+        <NamedIndividual IRI="#Three_D"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BasicCapabilities"/>
+        <NamedIndividual IRI="#Transfer_of_field_data_between_models"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CoordinateDimensions"/>
+        <NamedIndividual IRI="#Two_D"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BasicCapabilities"/>
+        <NamedIndividual IRI="#Unit_Conversion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SupportedOperatingSystems"/>
+        <NamedIndividual IRI="#Windows"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BasicCapabilities"/>
+        <NamedIndividual IRI="#Workflow"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Temporal"/>
+        <NamedIndividual IRI="#accumulation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Options_GridDescription"/>
+        <NamedIndividual IRI="#adaptive"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Options_Transport"/>
+        <NamedIndividual IRI="#adaptive_coupling_frequency"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModelComponentRef"/>
+        <NamedIndividual IRI="#an_identifier_such_as_an_integer_or_string"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModelComponentRef"/>
+        <NamedIndividual IRI="#an_instance_of_a_Fortran_derived_type_or_C_struct"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModelComponentRef"/>
+        <NamedIndividual IRI="#an_object_in_an_object-oriented_language"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DecompositionType_Transport"/>
+        <NamedIndividual IRI="#arbitrary_user_assigned"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Temporal"/>
+        <NamedIndividual IRI="#averaging"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Repartitioning_Transport"/>
+        <NamedIndividual IRI="#between_different_decompositions"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WeightGenerationInterpolationMethod"/>
+        <NamedIndividual IRI="#bilinear_trilinear"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WeightApplicationInterpolationMethod"/>
+        <NamedIndividual IRI="#bilinear_trilinear_waim"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Options"/>
+        <NamedIndividual IRI="#bundles"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DriverCustomization"/>
+        <NamedIndividual IRI="#by_changing_configuration_metadata"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DriverCustomization"/>
+        <NamedIndividual IRI="#by_changing_model_field_data_dependencies"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DriverCustomization"/>
+        <NamedIndividual IRI="#by_specializing_a_generic_driver"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ImplementationLanguage"/>
+        <NamedIndividual IRI="#c"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ClientLanguageBindings"/>
+        <NamedIndividual IRI="#c_clb"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SupportedPlatforms"/>
+        <NamedIndividual IRI="#cloud"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SupportedPlatforms"/>
+        <NamedIndividual IRI="#cluster"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mediation"/>
+        <NamedIndividual IRI="#completion_of_coupling_fields_with_external_data"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Documentation"/>
+        <NamedIndividual IRI="#comprehensive_API_Reference"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Options_Transport"/>
+        <NamedIndividual IRI="#conditional_target"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MultiExecutable"/>
+        <NamedIndividual IRI="#coupler_is_a_seperate_executable"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ImplementationLanguage"/>
+        <NamedIndividual IRI="#cplusplus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ClientLanguageBindings"/>
+        <NamedIndividual IRI="#cplusplus_clb"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ImplementationLanguage"/>
+        <NamedIndividual IRI="#csharp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ClientLanguageBindings"/>
+        <NamedIndividual IRI="#csharp_clb"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DecompositionSpec_Transport"/>
+        <NamedIndividual IRI="#described_globally"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DecompositionSpec_Transport"/>
+        <NamedIndividual IRI="#described_locally"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SupportedPlatforms"/>
+        <NamedIndividual IRI="#desktop_laptop"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModelMetadataProvision"/>
+        <NamedIndividual IRI="#directly_in_source_code_eg_API_calls"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Support"/>
+        <NamedIndividual IRI="#email"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MultiExecutable"/>
+        <NamedIndividual IRI="#entire_application_is_a_single_executable"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Options_Transport"/>
+        <NamedIndividual IRI="#event_based"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Documentation"/>
+        <NamedIndividual IRI="#example_application_code"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModelMetaDataRuntimeQuery"/>
+        <NamedIndividual IRI="#execution_methods"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModelMetaDataStaticQuery"/>
+        <NamedIndividual IRI="#execution_methods_sq"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ControlRegime"/>
+        <NamedIndividual IRI="#explicit_control_control_thread_is_in_a_driver_written_mostly_entirely_by_the_user"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ControlRegime"/>
+        <NamedIndividual IRI="#explicit_control_control_thread_is_in_a_generic_driver"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ControlRegime"/>
+        <NamedIndividual IRI="#explicit_control_control_thread_is_in_a_generic_driver_that_can_be_customized_specialized_by_user"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Temporal"/>
+        <NamedIndividual IRI="#extrapolation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WeightGenerationInterpolationMethod"/>
+        <NamedIndividual IRI="#extrapolation_outside_source_domain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WeightApplicationInterpolationMethod"/>
+        <NamedIndividual IRI="#extrapolation_outside_source_domain_waim"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mediation"/>
+        <NamedIndividual IRI="#field_combination_merging"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DataExchangeMechanism"/>
+        <NamedIndividual IRI="#file"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WeightApplicationExecution"/>
+        <NamedIndividual IRI="#file_to_file"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WeightGenerationInterpolationMethod"/>
+        <NamedIndividual IRI="#first_order_conservative"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WeightApplicationInterpolationMethod"/>
+        <NamedIndividual IRI="#first_order_conservative_wain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ImplementationLanguage"/>
+        <NamedIndividual IRI="#fortran"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ClientLanguageBindings"/>
+        <NamedIndividual IRI="#fortran_clb"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Support"/>
+        <NamedIndividual IRI="#forum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FieldPriming_Transport"/>
+        <NamedIndividual IRI="#from_constant_or_function"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FieldPriming_Transport"/>
+        <NamedIndividual IRI="#from_file"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FieldPriming_Transport"/>
+        <NamedIndividual IRI="#from_memory"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DistanceMeasure"/>
+        <NamedIndividual IRI="#great_circle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WeightGenerationInterpolationMethod"/>
+        <NamedIndividual IRI="#higher_order_conservative"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WeightApplicationInterpolationMethod"/>
+        <NamedIndividual IRI="#higher_order_conservative_wain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WeightGenerationInterpolationMethod"/>
+        <NamedIndividual IRI="#higher_order_non_conservative"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WeightApplicationInterpolationMethod"/>
+        <NamedIndividual IRI="#higher_order_non_conservative_wain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ControlRegime"/>
+        <NamedIndividual IRI="#implicit_control_model_retain_control_and_control_sequence_is_determined_by_data_dependencies"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MetaDataOutput"/>
+        <NamedIndividual IRI="#in_a_standardized_format"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MetaDataOutput"/>
+        <NamedIndividual IRI="#in_an_infrastructure_specific_format"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Temporal"/>
+        <NamedIndividual IRI="#interpolation_linear"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Temporal"/>
+        <NamedIndividual IRI="#interpolation_quadratic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Temporal"/>
+        <NamedIndividual IRI="#interpolation_stairstep"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChangeManagement"/>
+        <NamedIndividual IRI="#issue_tracker"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ImplementationLanguage"/>
+        <NamedIndividual IRI="#java"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ClientLanguageBindings"/>
+        <NamedIndividual IRI="#java_clb"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mediation"/>
+        <NamedIndividual IRI="#land_ocean_coastline_consistency_checking"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModelMetaDataRuntimeQuery"/>
+        <NamedIndividual IRI="#list_of_input_physical_fields"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModelMetaDataStaticQuery"/>
+        <NamedIndividual IRI="#list_of_input_physical_fields_sq"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModelMetaDataRuntimeQuery"/>
+        <NamedIndividual IRI="#list_of_output_physical_fields"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModelMetaDataStaticQuery"/>
+        <NamedIndividual IRI="#list_of_output_physical_fields_sq"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TopologicalStructure"/>
+        <NamedIndividual IRI="#location_stream"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TopologicalStructure"/>
+        <NamedIndividual IRI="#logically_rectangular"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Options_GridDescription"/>
+        <NamedIndividual IRI="#masking"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChangeManagement"/>
+        <NamedIndividual IRI="#mechanism_for_community_contribution"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BasicCapabilities"/>
+        <NamedIndividual IRI="#mediates_between_parallel_and_serial_codes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModelMetadataFlow"/>
+        <NamedIndividual IRI="#metadata_flows_from_driver_infrastructure_to_model_components"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModelMetadataFlow"/>
+        <NamedIndividual IRI="#metadata_flows_from_model_components_to_infrastructure_driver"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Temporal"/>
+        <NamedIndividual IRI="#minimum_or_maximum_in_time"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MultiExecutable"/>
+        <NamedIndividual IRI="#models_are_seperate_executables"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModelExecutionConcurrency"/>
+        <NamedIndividual IRI="#models_can_execute_concurrently"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModelExecutionConcurrency"/>
+        <NamedIndividual IRI="#models_can_execute_sequentially"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Options_GridDescription"/>
+        <NamedIndividual IRI="#multi_tile"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Parallelism"/>
+        <NamedIndividual IRI="#multiprocessing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Parallelism"/>
+        <NamedIndividual IRI="#multithreading"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WeightGenerationInterpolationMethod"/>
+        <NamedIndividual IRI="#nearest_neighbour"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WeightApplicationInterpolationMethod"/>
+        <NamedIndividual IRI="#nearest_neighbour_waim"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Options_GridDescription"/>
+        <NamedIndividual IRI="#nesting"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Options_GridDescription"/>
+        <NamedIndividual IRI="#non_conformal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WeightGenerationInterpolationMethod"/>
+        <NamedIndividual IRI="#non_geometrical"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WeightApplicationInterpolationMethod"/>
+        <NamedIndividual IRI="#non_geometrical_waim"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WeightGenerationExecution"/>
+        <NamedIndividual IRI="#offline_parallel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WeightGenerationExecution"/>
+        <NamedIndividual IRI="#offline_serial"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TopologicalDimensions"/>
+        <NamedIndividual IRI="#one_D"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Repartitioning_Transport"/>
+        <NamedIndividual IRI="#one_to_many"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WeightApplicationExecution"/>
+        <NamedIndividual IRI="#online"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WeightGenerationExecution"/>
+        <NamedIndividual IRI="#online_parallel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WeightGenerationExecution"/>
+        <NamedIndividual IRI="#online_reusable"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WeightGenerationExecution"/>
+        <NamedIndividual IRI="#online_serial"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Support"/>
+        <NamedIndividual IRI="#phone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChangeManagement"/>
+        <NamedIndividual IRI="#process_to_prioritize_user_requests"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModelMetaDataRuntimeQuery"/>
+        <NamedIndividual IRI="#properties_of_the_numerical_grid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModelMetaDataStaticQuery"/>
+        <NamedIndividual IRI="#properties_of_the_numerical_grid_sq"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BasicCapabilities"/>
+        <NamedIndividual IRI="#provides_a_software_framework"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BasicCapabilities"/>
+        <NamedIndividual IRI="#provides_data_structures_for_describing_numerical_grids"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ParallelLibrary"/>
+        <NamedIndividual IRI="#pthreads"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ImplementationLanguage"/>
+        <NamedIndividual IRI="#python"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ClientLanguageBindings"/>
+        <NamedIndividual IRI="#python_clb"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModelMetadataProvision"/>
+        <NamedIndividual IRI="#read_from_a_configuration_file_in_an_infrastructure-specific_format"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModelMetadataProvision"/>
+        <NamedIndividual IRI="#read_from_configuration_file_in_a_standard_format"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DataExchangeMechanism"/>
+        <NamedIndividual IRI="#shared_memory"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CoordinateSystem"/>
+        <NamedIndividual IRI="#spherical"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DistanceMeasure"/>
+        <NamedIndividual IRI="#straight_line"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DataExchangeMechanism"/>
+        <NamedIndividual IRI="#subroutine_or_method_argument_passing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BasicCapabilities"/>
+        <NamedIndividual IRI="#supports_parallelism"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Documentation"/>
+        <NamedIndividual IRI="#system_tests"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tests"/>
+        <NamedIndividual IRI="#system_tests_T"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModelMetaDataRuntimeQuery"/>
+        <NamedIndividual IRI="#temporal_metadata"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModelMetaDataStaticQuery"/>
+        <NamedIndividual IRI="#temporal_metadata_sq"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TopologicalDimensions"/>
+        <NamedIndividual IRI="#three_D"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModelMetaDataRuntimeQuery"/>
+        <NamedIndividual IRI="#time_stepping_method"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModelMetaDataStaticQuery"/>
+        <NamedIndividual IRI="#time_stepping_method_sq"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Support"/>
+        <NamedIndividual IRI="#training_courses"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TopologicalDimensions"/>
+        <NamedIndividual IRI="#two_D"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Options"/>
+        <NamedIndividual IRI="#ungridded_dimensions"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mediation"/>
+        <NamedIndividual IRI="#unit_conversion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Documentation"/>
+        <NamedIndividual IRI="#unit_tests"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tests"/>
+        <NamedIndividual IRI="#unit_tests_T"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TopologicalStructure"/>
+        <NamedIndividual IRI="#unstructured"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Documentation"/>
+        <NamedIndividual IRI="#user_guide_tutorials"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Options"/>
+        <NamedIndividual IRI="#vector_fields"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChangeManagement"/>
+        <NamedIndividual IRI="#version_control"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DataExchangeMechanism"/>
+        <NamedIndividual IRI="#web_request"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Support"/>
+        <NamedIndividual IRI="#workshops"/>
+    </ClassAssertion>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasControlRegime"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasLicence"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBasicCapabilities"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasClientLanguageBindings"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasControlRegime"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCoordinateDimensions"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCoordinateSystems"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDataExchangeMechanism"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDesignIntent"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDocumentationTypes"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDriverCustomization"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasExternalSoftwareDependencies"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFieldPrimings"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasGridDescriptionOptions"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasImplementationLanguages"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLicence"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMaxPolygonEdges"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMetaDataOutput"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMetaDataOutputFormat"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasModelComponentRef"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasModelExecutionConcurrency"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasModelMetaDataFlow"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasModelMetaDataProvision"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasModelMetaDataProvisionFormats"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasModelMetaDataRuntimeQuery"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasModelMetaDataStaticQuery"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMultiExecutables"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasOptions"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasParallelLibraries"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasParallelism"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTests"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTopologicalDimensions"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTopologicalStructure"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTransportDecompositionSpec"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTransportDecompositionType"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTransportOptions"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasUserSupportTypes"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasWeightApplicationExecutionTypes"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasWeightApplicationInterpolationMethods"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasWeightGenerationExecutionTypes"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasWeightGenerationInterpolationMethods"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#measuresDistanceIn"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#supportsChangeManagementTypes"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#supportsCompilers"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#supportsMediation"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#supportsModels"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#supportsOperatingSystems"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#supportsPlatforms"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#supportsRepartitioningTypes"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#supportsTemporals"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBasicCapabilities"/>
+        <Class IRI="#BasicCapabilities"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasClientLanguageBindings"/>
+        <Class IRI="#ClientLanguageBindings"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasControlRegime"/>
+        <Class IRI="#ControlRegime"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCoordinateDimensions"/>
+        <Class IRI="#CoordinateDimensions"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCoordinateSystems"/>
+        <Class IRI="#CoordinateSystem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDataExchangeMechanism"/>
+        <Class IRI="#DataExchangeMechanism"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDesignIntent"/>
+        <Class IRI="#DesignIntent_General"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDocumentationTypes"/>
+        <Class IRI="#Documentation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDriverCustomization"/>
+        <Class IRI="#DriverCustomization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasExternalSoftwareDependencies"/>
+        <Class IRI="#ExternalSoftwareDependencies"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFieldPrimings"/>
+        <Class IRI="#FieldPriming_Transport"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasGridDescriptionOptions"/>
+        <Class IRI="#Options_GridDescription"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasImplementationLanguages"/>
+        <Class IRI="#ImplementationLanguage"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLicence"/>
+        <Class IRI="#Licence"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMaxPolygonEdges"/>
+        <Class IRI="#MaxPolygonEdges"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMetaDataOutput"/>
+        <Class IRI="#MetaDataOutput"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMetaDataOutputFormat"/>
+        <Class IRI="#MetaDataOutputFormats"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasModelComponentRef"/>
+        <Class IRI="#ModelComponentRef"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasModelExecutionConcurrency"/>
+        <Class IRI="#ModelExecutionConcurrency"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasModelMetaDataFlow"/>
+        <Class IRI="#ModelMetadataFlow"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasModelMetaDataProvision"/>
+        <Class IRI="#ModelMetadataProvision"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasModelMetaDataProvisionFormats"/>
+        <Class IRI="#ModelMetadataProvisionFormats"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasModelMetaDataRuntimeQuery"/>
+        <Class IRI="#ModelMetaDataRuntimeQuery"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasModelMetaDataStaticQuery"/>
+        <Class IRI="#ModelMetaDataStaticQuery"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMultiExecutables"/>
+        <Class IRI="#MultiExecutable"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasOptions"/>
+        <Class IRI="#Options"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasParallelLibraries"/>
+        <Class IRI="#ParallelLibrary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasParallelism"/>
+        <Class IRI="#Parallelism"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTests"/>
+        <Class IRI="#Tests"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTopologicalDimensions"/>
+        <Class IRI="#TopologicalDimensions"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTopologicalStructure"/>
+        <Class IRI="#TopologicalStructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTransportDecompositionSpec"/>
+        <Class IRI="#DecompositionSpec_Transport"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTransportDecompositionType"/>
+        <Class IRI="#DecompositionType_Transport"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTransportOptions"/>
+        <Class IRI="#Options_Transport"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasUserSupportTypes"/>
+        <Class IRI="#Support"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasWeightApplicationExecutionTypes"/>
+        <Class IRI="#WeightApplicationExecution"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasWeightApplicationInterpolationMethods"/>
+        <Class IRI="#WeightApplicationInterpolationMethod"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasWeightGenerationExecutionTypes"/>
+        <Class IRI="#WeightGenerationExecution"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasWeightGenerationInterpolationMethods"/>
+        <Class IRI="#WeightGenerationInterpolationMethod"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#measuresDistanceIn"/>
+        <Class IRI="#DistanceMeasure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#supportsChangeManagementTypes"/>
+        <Class IRI="#ChangeManagement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#supportsMediation"/>
+        <Class IRI="#Mediation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#supportsModels"/>
+        <Class IRI="#SupportedModels"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#supportsOperatingSystems"/>
+        <Class IRI="#SupportedOperatingSystems"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#supportsPlatforms"/>
+        <Class IRI="#SupportedPlatforms"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#supportsRepartitioningTypes"/>
+        <Class IRI="#Repartitioning_Transport"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#supportsTemporals"/>
+        <Class IRI="#Temporal"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+
