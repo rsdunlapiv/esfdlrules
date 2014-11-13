@@ -10,17 +10,19 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.pizza.com/ontologies/pizza.owl/2014/10/untitled-ontology-25"
+     xml:base="http://www.earthsystemcog.org/projects/es-fdl/ontology"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     ontologyIRI="http://www.pizza.com/ontologies/pizza.owl/2014/10/untitled-ontology-25">
+     ontologyIRI="http://www.earthsystemcog.org/projects/es-fdl/ontology"
+     versionIRI="http://www.earthsystemcog.org/projects/es-fdl/ontology/0.1">
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="esfdl" IRI="http://www.earthsystemcog.org/projects/es-fdl/ontology#"/>
     <Declaration>
         <Class IRI="#BasicCapabilities"/>
     </Declaration>
@@ -355,13 +357,13 @@
         <ObjectProperty IRI="#supportsTemporals"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Angle_Conversion"/>
+        <NamedIndividual IRI="#AngleConversion"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Apache_Licence_2.0"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Application_of_spatial_interpolation_weights"/>
+        <NamedIndividual IRI="#AppSpatialInterpWts"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#BSD_2-Clause_Licence"/>
@@ -448,7 +450,7 @@
         <NamedIndividual IRI="#Three_D"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Transfer_of_field_data_between_models"/>
+        <NamedIndividual IRI="#TransferFieldData"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Two_D"/>
@@ -870,6 +872,9 @@
     <Declaration>
         <NamedIndividual IRI="#workshops"/>
     </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#XMLMapping"/>
+    </Declaration>
     <SubClassOf>
         <Class IRI="#BasicCapabilities"/>
         <Class IRI="#General"/>
@@ -1188,7 +1193,7 @@
     </DisjointClasses>
     <ClassAssertion>
         <Class IRI="#BasicCapabilities"/>
-        <NamedIndividual IRI="#Angle_Conversion"/>
+        <NamedIndividual IRI="#AngleConversion"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Licence"/>
@@ -1196,7 +1201,7 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#BasicCapabilities"/>
-        <NamedIndividual IRI="#Application_of_spatial_interpolation_weights"/>
+        <NamedIndividual IRI="#AppSpatialInterpWts"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Licence"/>
@@ -1312,7 +1317,7 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#BasicCapabilities"/>
-        <NamedIndividual IRI="#Transfer_of_field_data_between_models"/>
+        <NamedIndividual IRI="#TransferFieldData"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#CoordinateDimensions"/>
@@ -2260,6 +2265,46 @@
         <ObjectProperty IRI="#supportsTemporals"/>
         <Class IRI="#Temporal"/>
     </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AngleConversion</IRI>
+        <Literal datatypeIRI="&xsd;string">Angle conversion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AppSpatialInterpWts</IRI>
+        <Literal datatypeIRI="&xsd;string">Application of spatial interpolation weights</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#BasicCapabilities</IRI>
+        <Literal datatypeIRI="&xsd;string">BasicCapabilities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BasicCapabilities</IRI>
+        <Literal datatypeIRI="&xsd;string">Longer description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BasicCapabilities</IRI>
+        <Literal datatypeIRI="&xsd;string">Basic Capabilities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#TransferFieldData</IRI>
+        <Literal datatypeIRI="&xsd;string">Transfer of field data between models</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TransferFieldData</IRI>
+        <Literal datatypeIRI="&xsd;string">Transfer of field data between models</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasBasicCapabilities</IRI>
+        <Literal datatypeIRI="&xsd;string">BasicCapabilities</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 

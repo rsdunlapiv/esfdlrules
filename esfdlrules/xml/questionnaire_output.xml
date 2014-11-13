@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<modelComponent ontologyTypeKey="cim.1.software.ModelComponent">
+	
+	<description>This is the description.</description>
+	<longName>Earth System Modeling Framework</longName>
+	<shortName>ESMF</shortName>
+
+	<properties>
+		<property ontologyTypeKey="cim.1.software.ComponentProperty">
+			<isRepresented>True</isRepresented>
+			<longName>Architecture</longName>
+			<shortName>Architecture</shortName>
+			<subProperties>
+				<subProperty ontologyTypeKey="cim.1.software.ComponentProperty">
+					<isRepresented>True</isRepresented>
+					<longName>ModelComponentAbstraction</longName>
+					<shortName>ModelComponentAbstraction</shortName>
+					<values>
+						<value>yes</value>
+					</values>
+				</subProperty>
+				<subProperty ontologyTypeKey="cim.1.software.ComponentProperty">
+					<isRepresented>True</isRepresented>
+					<longName>ModelComponentRef</longName>
+					<shortName>ModelComponentRef</shortName>
+					<values>
+						<value>an instance of a Fortran derived type or C struct</value>
+					</values>
+				</subProperty>
+			</subProperties>
+		</property>
+		<property ontologyTypeKey="cim.1.software.ComponentProperty">
+			<description>Some description here</description>
+			<isRepresented>True</isRepresented>
+			<longName>OpenSource</longName>  <!--ignore for now-->
+			<shortName>OpenSource</shortName>
+			<values>
+				<value>yes</value>
+			</values>
+		</property>
+		<property ontologyTypeKey="cim.1.software.ComponentProperty">
+			<description>Some description here</description>
+			<isRepresented>True</isRepresented>
+			<longName>License</longName>  <!--ignore for now-->
+			<shortName>License</shortName>
+			<values>
+				<value>MIT License</value>
+			</values>
+		</property>
+		<property ontologyTypeKey="cim.1.software.ComponentProperty">
+			<isRepresented>True</isRepresented>
+			<longName>BasicCapabilities</longName>
+			<shortName>BasicCapabilities</shortName>
+			<values>
+				<value>Transfer of field data between models</value>
+				<value>Generation of spatial interpolation weights</value>
+			</values>
+		</property>
+	</properties>
+	
+</modelComponent>	
+
