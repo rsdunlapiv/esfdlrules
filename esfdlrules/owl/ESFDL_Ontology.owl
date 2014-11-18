@@ -54,12 +54,6 @@
         <Class IRI="#DesignIntent_General"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#DeveloperDocumentation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#DeveloperSupport"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#DistanceMeasure"/>
     </Declaration>
     <Declaration>
@@ -73,15 +67,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#FieldPriming_Transport"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#General"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#GridDescription"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Implementation"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ImplementationLanguage"/>
@@ -102,13 +87,7 @@
         <Class IRI="#MetaDataOutputFormats"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ModelComponentAbstraction"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#ModelComponentRef"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ModelComponents"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ModelExecutionConcurrency"/>
@@ -159,12 +138,6 @@
         <Class IRI="#Repartitioning_Transport"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Representation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#SparseMatrixMultiplication"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Support"/>
     </Declaration>
     <Declaration>
@@ -190,15 +163,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#TopologicalStructure"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Transformations"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Transport"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#UserSupport"/>
     </Declaration>
     <Declaration>
         <Class IRI="#WeightApplicationExecution"/>
@@ -355,6 +319,18 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#supportsTemporals"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#IsOpensource"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDeveloperDocumentation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasModelComponentAbstraction"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSparseMatrixMultiplication"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#AngleConversion"/>
@@ -875,321 +851,58 @@
     <Declaration>
         <AnnotationProperty IRI="#XMLMapping"/>
     </Declaration>
-    <SubClassOf>
+    <DisjointClasses>
         <Class IRI="#BasicCapabilities"/>
-        <Class IRI="#General"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#ChangeManagement"/>
-        <Class IRI="#UserSupport"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#ClientLanguageBindings"/>
-        <Class IRI="#Implementation"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#ControlRegime"/>
-        <Class IRI="#ModelComponents"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#CoordinateDimensions"/>
-        <Class IRI="#GridDescription"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#CoordinateSystem"/>
-        <Class IRI="#GridDescription"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#DataExchangeMechanism"/>
-        <Class IRI="#Implementation"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#DecompositionSpec_Transport"/>
-        <Class IRI="#Transport"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#DecompositionType_Transport"/>
-        <Class IRI="#Transport"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#DesignIntent_General"/>
-        <Class IRI="#General"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#DeveloperDocumentation"/>
-        <Class IRI="#DeveloperSupport"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#DistanceMeasure"/>
-        <Class IRI="#GridDescription"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Documentation"/>
-        <Class IRI="#UserSupport"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#DriverCustomization"/>
-        <Class IRI="#ModelComponents"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#ExternalSoftwareDependencies"/>
-        <Class IRI="#General"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#FieldPriming_Transport"/>
-        <Class IRI="#Transport"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#ImplementationLanguage"/>
-        <Class IRI="#Implementation"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Licence"/>
-        <Class IRI="#General"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#MaxPolygonEdges"/>
-        <Class IRI="#GridDescription"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Mediation"/>
-        <Class IRI="#Transformations"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#MetaDataOutput"/>
-        <Class IRI="#ModelComponents"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#MetaDataOutputFormats"/>
-        <Class IRI="#ModelComponents"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ModelComponentAbstraction"/>
-        <Class IRI="#ModelComponents"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ModelComponentRef"/>
-        <Class IRI="#ModelComponents"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ModelExecutionConcurrency"/>
-        <Class IRI="#Implementation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ModelMetaDataRuntimeQuery"/>
-        <Class IRI="#ModelComponents"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ModelMetaDataStaticQuery"/>
-        <Class IRI="#ModelComponents"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ModelMetadataFlow"/>
-        <Class IRI="#ModelComponents"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ModelMetadataProvision"/>
-        <Class IRI="#ModelComponents"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ModelMetadataProvisionFormats"/>
-        <Class IRI="#ModelComponents"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#MultiExecutable"/>
-        <Class IRI="#Implementation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Opensource"/>
-        <Class IRI="#General"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Options"/>
-        <Class IRI="#Representation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Options_GridDescription"/>
-        <Class IRI="#GridDescription"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Options_Transport"/>
-        <Class IRI="#Transport"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#ParallelLibrary"/>
-        <Class IRI="#Implementation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Parallelism"/>
-        <Class IRI="#Implementation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Poles"/>
-        <Class IRI="#GridDescription"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Repartitioning_Transport"/>
-        <Class IRI="#Transport"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SparseMatrixMultiplication"/>
-        <Class IRI="#Transformations"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Support"/>
-        <Class IRI="#UserSupport"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SupportedModels"/>
-        <Class IRI="#General"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SupportedOperatingSystems"/>
-        <Class IRI="#Implementation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SupportedPlatforms"/>
-        <Class IRI="#Implementation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SwappableComponents"/>
-        <Class IRI="#Implementation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Temporal"/>
-        <Class IRI="#Transformations"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Tests"/>
-        <Class IRI="#DeveloperSupport"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#TopologicalDimensions"/>
-        <Class IRI="#Representation"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#TopologicalStructure"/>
-        <Class IRI="#GridDescription"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WeightApplicationExecution"/>
-        <Class IRI="#Transformations"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WeightApplicationInterpolationMethod"/>
-        <Class IRI="#Transformations"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WeightGenerationExecution"/>
-        <Class IRI="#Transformations"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WeightGenerationInterpolationMethod"/>
-        <Class IRI="#Transformations"/>
-    </SubClassOf>
-    <DisjointClasses>
-        <Class IRI="#BasicCapabilities"/>
-        <Class IRI="#DesignIntent_General"/>
-        <Class IRI="#ExternalSoftwareDependencies"/>
-        <Class IRI="#Licence"/>
-        <Class IRI="#Opensource"/>
-        <Class IRI="#SupportedModels"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#ChangeManagement"/>
-        <Class IRI="#Documentation"/>
-        <Class IRI="#Support"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#ClientLanguageBindings"/>
-        <Class IRI="#DataExchangeMechanism"/>
-        <Class IRI="#ImplementationLanguage"/>
-        <Class IRI="#ModelExecutionConcurrency"/>
-        <Class IRI="#MultiExecutable"/>
-        <Class IRI="#ParallelLibrary"/>
-        <Class IRI="#Parallelism"/>
-        <Class IRI="#SupportedOperatingSystems"/>
-        <Class IRI="#SupportedPlatforms"/>
-        <Class IRI="#SwappableComponents"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#ControlRegime"/>
-        <Class IRI="#DriverCustomization"/>
         <Class IRI="#MetaDataOutput"/>
         <Class IRI="#MetaDataOutputFormats"/>
-        <Class IRI="#ModelComponentAbstraction"/>
         <Class IRI="#ModelComponentRef"/>
+        <Class IRI="#ModelExecutionConcurrency"/>
         <Class IRI="#ModelMetaDataRuntimeQuery"/>
         <Class IRI="#ModelMetaDataStaticQuery"/>
         <Class IRI="#ModelMetadataFlow"/>
         <Class IRI="#ModelMetadataProvision"/>
         <Class IRI="#ModelMetadataProvisionFormats"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#CoordinateDimensions"/>
-        <Class IRI="#CoordinateSystem"/>
-        <Class IRI="#DistanceMeasure"/>
-        <Class IRI="#MaxPolygonEdges"/>
-        <Class IRI="#Options_GridDescription"/>
-        <Class IRI="#Poles"/>
-        <Class IRI="#TopologicalStructure"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#CoordinateDimensions"/>
-        <Class IRI="#CoordinateSystem"/>
-        <Class IRI="#DistanceMeasure"/>
-        <Class IRI="#Options_GridDescription"/>
-        <Class IRI="#TopologicalStructure"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#CoordinateDimensions"/>
-        <Class IRI="#CoordinateSystem"/>
-        <Class IRI="#DistanceMeasure"/>
-        <Class IRI="#TopologicalStructure"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#DecompositionSpec_Transport"/>
-        <Class IRI="#DecompositionType_Transport"/>
-        <Class IRI="#FieldPriming_Transport"/>
-        <Class IRI="#Options_Transport"/>
-        <Class IRI="#Repartitioning_Transport"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#DeveloperDocumentation"/>
-        <Class IRI="#Tests"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#DeveloperSupport"/>
-        <Class IRI="#General"/>
-        <Class IRI="#GridDescription"/>
-        <Class IRI="#Implementation"/>
-        <Class IRI="#ModelComponents"/>
         <Class IRI="#ModellingInfrastructure"/>
-        <Class IRI="#Representation"/>
-        <Class IRI="#Transformations"/>
-        <Class IRI="#Transport"/>
-        <Class IRI="#UserSupport"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Mediation"/>
-        <Class IRI="#SparseMatrixMultiplication"/>
-        <Class IRI="#Temporal"/>
-        <Class IRI="#WeightApplicationExecution"/>
-        <Class IRI="#WeightApplicationInterpolationMethod"/>
-        <Class IRI="#WeightGenerationExecution"/>
-        <Class IRI="#WeightGenerationInterpolationMethod"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Mediation"/>
-        <Class IRI="#Temporal"/>
-        <Class IRI="#WeightApplicationExecution"/>
-        <Class IRI="#WeightApplicationInterpolationMethod"/>
-        <Class IRI="#WeightGenerationExecution"/>
-        <Class IRI="#WeightGenerationInterpolationMethod"/>
-    </DisjointClasses>
-    <DisjointClasses>
+        <Class IRI="#MultiExecutable"/>
+        <Class IRI="#Opensource"/>
         <Class IRI="#Options"/>
+        <Class IRI="#Options_GridDescription"/>
+        <Class IRI="#Options_Transport"/>
+        <Class IRI="#ParallelLibrary"/>
+        <Class IRI="#Parallelism"/>
+        <Class IRI="#Poles"/>
+        <Class IRI="#Repartitioning_Transport"/>
+        <Class IRI="#Support"/>
+        <Class IRI="#SupportedModels"/>
+        <Class IRI="#SupportedOperatingSystems"/>
+        <Class IRI="#SupportedPlatforms"/>
+        <Class IRI="#SwappableComponents"/>
+        <Class IRI="#Temporal"/>
+        <Class IRI="#Tests"/>
         <Class IRI="#TopologicalDimensions"/>
+        <Class IRI="#TopologicalStructure"/>
+        <Class IRI="#WeightApplicationExecution"/>
+        <Class IRI="#WeightApplicationInterpolationMethod"/>
+        <Class IRI="#WeightGenerationExecution"/>
+        <Class IRI="#WeightGenerationInterpolationMethod"/>
     </DisjointClasses>
     <ClassAssertion>
         <Class IRI="#BasicCapabilities"/>
@@ -2265,6 +1978,55 @@
         <ObjectProperty IRI="#supportsTemporals"/>
         <Class IRI="#Temporal"/>
     </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#IsOpensource"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasDeveloperDocumentation"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasModelComponentAbstraction"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasSparseMatrixMultiplication"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#IsOpensource"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDeveloperDocumentation"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasModelComponentAbstraction"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSparseMatrixMultiplication"/>
+        <Class IRI="#ModellingInfrastructure"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#IsOpensource"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDeveloperDocumentation"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasModelComponentAbstraction"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSparseMatrixMultiplication"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#AngleConversion</IRI>
+        <Literal datatypeIRI="&xsd;string">Angle conversion</Literal>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#AngleConversion</IRI>
@@ -2272,8 +2034,28 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Apache_Licence_2.0</IRI>
+        <Literal datatypeIRI="&xsd;string">Apache licence 2.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
         <IRI>#AppSpatialInterpWts</IRI>
         <Literal datatypeIRI="&xsd;string">Application of spatial interpolation weights</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AppSpatialInterpWts</IRI>
+        <Literal datatypeIRI="&xsd;string">Application of spatial interpolation weights</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BSD_2-Clause_Licence</IRI>
+        <Literal datatypeIRI="&xsd;string">BSD 2 Clause Licence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BSD_3-Clause_Licence</IRI>
+        <Literal datatypeIRI="&xsd;string">BSD 3 Clause Licence</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XMLMapping"/>
@@ -2292,6 +2074,406 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#Build_and_or_Configuration_management</IRI>
+        <Literal datatypeIRI="&xsd;string">Build and or Configuration management</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Build_and_or_Configuration_management</IRI>
+        <Literal datatypeIRI="&xsd;string">Build and or Configuration management</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CSDMS</IRI>
+        <Literal datatypeIRI="&xsd;string">CSDMS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Cartesian</IRI>
+        <Literal datatypeIRI="&xsd;string">Cartesian</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ChangeManagement</IRI>
+        <Literal datatypeIRI="&xsd;string">Change Management</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ClientLanguageBindings</IRI>
+        <Literal datatypeIRI="&xsd;string">Client Language Bindings</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Contiguous_blocks</IRI>
+        <Literal datatypeIRI="&xsd;string">Contiguous blocks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ControlRegime</IRI>
+        <Literal datatypeIRI="&xsd;string">Control Regime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CoordinateDimensions</IRI>
+        <Literal datatypeIRI="&xsd;string">Coordinate Dimensions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CoordinateSystem</IRI>
+        <Literal datatypeIRI="&xsd;string">Coordinate System</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DataExchangeMechanism</IRI>
+        <Literal datatypeIRI="&xsd;string">Data Exchange Mechanism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DecompositionSpec_Transport</IRI>
+        <Literal datatypeIRI="&xsd;string">Decomposition Spec Transport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DecompositionType_Transport</IRI>
+        <Literal datatypeIRI="&xsd;string">Decomposition Type Transport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#Defines_an_interface_for_models</IRI>
+        <Literal datatypeIRI="&xsd;string">Defines an interface for models</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Defines_an_interface_for_models</IRI>
+        <Literal datatypeIRI="&xsd;string">Defines an interface for models</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DesignIntent_General</IRI>
+        <Literal datatypeIRI="&xsd;string">Design Intent General</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DistanceMeasure</IRI>
+        <Literal datatypeIRI="&xsd;string">Distance Measure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Documentation</IRI>
+        <Literal datatypeIRI="&xsd;string">Documentation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DriverCustomization</IRI>
+        <Literal datatypeIRI="&xsd;string">Driver Customization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ESMF</IRI>
+        <Literal datatypeIRI="&xsd;string">ESMF</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ExternalSoftwareDependencies</IRI>
+        <Literal datatypeIRI="&xsd;string">External Software Dependencies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FieldPriming_Transport</IRI>
+        <Literal datatypeIRI="&xsd;string">Field Priming Transport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GNU_General_Public_Licence</IRI>
+        <Literal datatypeIRI="&xsd;string">GNU general public licence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GNU_Lesser_General_Public_Licence</IRI>
+        <Literal datatypeIRI="&xsd;string">GNU lesser general public licence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#Generation_of_spatial_interpolation_weights</IRI>
+        <Literal datatypeIRI="&xsd;string">Generation of spatial interpolation weights</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Generation_of_spatial_interpolation_weights</IRI>
+        <Literal datatypeIRI="&xsd;string">Generation of spatial interpolation weights</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ImplementationLanguage</IRI>
+        <Literal datatypeIRI="&xsd;string">Implementation Language</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#IsOpensource</IRI>
+        <Literal datatypeIRI="&xsd;string">Opensource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Licence</IRI>
+        <Literal datatypeIRI="&xsd;string">Licence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Linux</IRI>
+        <Literal datatypeIRI="&xsd;string">Linux</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MCT</IRI>
+        <Literal datatypeIRI="&xsd;string">MCT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MIT_Licence</IRI>
+        <Literal datatypeIRI="&xsd;string">MIT licence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MPI</IRI>
+        <Literal datatypeIRI="&xsd;string">MPI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MPI_dem</IRI>
+        <Literal datatypeIRI="&xsd;string">MPI dem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Mac</IRI>
+        <Literal datatypeIRI="&xsd;string">Mac</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MaxPolygonEdges</IRI>
+        <Literal datatypeIRI="&xsd;string">Max Polygon Edges</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Mediation</IRI>
+        <Literal datatypeIRI="&xsd;string">Mediation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MetaDataOutput</IRI>
+        <Literal datatypeIRI="&xsd;string">Meta Data Output</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MetaDataOutputFormats</IRI>
+        <Literal datatypeIRI="&xsd;string">Meta Data Output Formats</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ModelComponentRef</IRI>
+        <Literal datatypeIRI="&xsd;string">Model Component Ref</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ModelExecutionConcurrency</IRI>
+        <Literal datatypeIRI="&xsd;string">Model Execution Concurrency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ModelMetaDataRuntimeQuery</IRI>
+        <Literal datatypeIRI="&xsd;string">Model Metadata Runtime Query</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ModelMetaDataStaticQuery</IRI>
+        <Literal datatypeIRI="&xsd;string">Model Metadata Static Query</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ModelMetadataFlow</IRI>
+        <Literal datatypeIRI="&xsd;string">Model Metadata Flow</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ModelMetadataProvision</IRI>
+        <Literal datatypeIRI="&xsd;string">Model Metadata Provision</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ModelMetadataProvisionFormats</IRI>
+        <Literal datatypeIRI="&xsd;string">Model Metadata Provision Formats</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ModellingInfrastructure</IRI>
+        <Literal datatypeIRI="&xsd;string">Modelling Infrastructure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MultiExecutable</IRI>
+        <Literal datatypeIRI="&xsd;string">Multi Executable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OASIS</IRI>
+        <Literal datatypeIRI="&xsd;string">OASIS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#One_D</IRI>
+        <Literal datatypeIRI="&xsd;string">One d</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#One_D_segments</IRI>
+        <Literal datatypeIRI="&xsd;string">One d segments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OpenACC</IRI>
+        <Literal datatypeIRI="&xsd;string">OpenACC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OpenMP</IRI>
+        <Literal datatypeIRI="&xsd;string">OpenMP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Opensource</IRI>
+        <Literal datatypeIRI="&xsd;string">Opensource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Options</IRI>
+        <Literal datatypeIRI="&xsd;string">Options</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Options_GridDescription</IRI>
+        <Literal datatypeIRI="&xsd;string">Options Grid Description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Options_Transport</IRI>
+        <Literal datatypeIRI="&xsd;string">Options Transport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ParallelLibrary</IRI>
+        <Literal datatypeIRI="&xsd;string">Parallel Library</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Parallelism</IRI>
+        <Literal datatypeIRI="&xsd;string">Parallelism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Poles</IRI>
+        <Literal datatypeIRI="&xsd;string">Poles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#Programming_Language_interoperability</IRI>
+        <Literal datatypeIRI="&xsd;string">Programming language interoperability</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Programming_Language_interoperability</IRI>
+        <Literal datatypeIRI="&xsd;string">Programming language interoperability</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#Provides_data_structures_for_storing_model_fields</IRI>
+        <Literal datatypeIRI="&xsd;string">Provides data structures for storing model fields</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Provides_data_structures_for_storing_model_fields</IRI>
+        <Literal datatypeIRI="&xsd;string">Provides data structures for storing model fields</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Repartitioning_Transport</IRI>
+        <Literal datatypeIRI="&xsd;string">Repartitioning Transport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#Semantic_mediation_of_model_weights</IRI>
+        <Literal datatypeIRI="&xsd;string">Semantic mediation of model weights</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Semantic_mediation_of_model_weights</IRI>
+        <Literal datatypeIRI="&xsd;string">Semantic mediation of model weights</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Source_code_annotations</IRI>
+        <Literal datatypeIRI="&xsd;string">Source code annotations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Support</IRI>
+        <Literal datatypeIRI="&xsd;string">Support</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SupportedModels</IRI>
+        <Literal datatypeIRI="&xsd;string">Supported Models</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SupportedOperatingSystems</IRI>
+        <Literal datatypeIRI="&xsd;string">Supported Operating Systems</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SupportedPlatforms</IRI>
+        <Literal datatypeIRI="&xsd;string">Supported Platforms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SwappableComponents</IRI>
+        <Literal datatypeIRI="&xsd;string">Swappable Components</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Temporal</IRI>
+        <Literal datatypeIRI="&xsd;string">Temporal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#Temporal_Interpolation</IRI>
+        <Literal datatypeIRI="&xsd;string">Temporal interpolation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Temporal_Interpolation</IRI>
+        <Literal datatypeIRI="&xsd;string">Temporal interpolation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Tests</IRI>
+        <Literal datatypeIRI="&xsd;string">Tests</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Three_D</IRI>
+        <Literal datatypeIRI="&xsd;string">Three d</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TopologicalDimensions</IRI>
+        <Literal datatypeIRI="&xsd;string">Topological Dimensions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TopologicalStructure</IRI>
+        <Literal datatypeIRI="&xsd;string">Topological Structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
         <IRI>#TransferFieldData</IRI>
         <Literal datatypeIRI="&xsd;string">Transfer of field data between models</Literal>
     </AnnotationAssertion>
@@ -2301,9 +2483,1004 @@
         <Literal datatypeIRI="&xsd;string">Transfer of field data between models</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Two_D</IRI>
+        <Literal datatypeIRI="&xsd;string">Two d</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#Unit_Conversion</IRI>
+        <Literal datatypeIRI="&xsd;string">Unit Conversion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Unit_Conversion</IRI>
+        <Literal datatypeIRI="&xsd;string">Unit Conversion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#WeightApplicationExecution</IRI>
+        <Literal datatypeIRI="&xsd;string">Weight Application Execution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#WeightApplicationInterpolationMethod</IRI>
+        <Literal datatypeIRI="&xsd;string">Weight Application Interpolation Method</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#WeightGenerationExecution</IRI>
+        <Literal datatypeIRI="&xsd;string">Weight Generation Execution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#WeightGenerationInterpolationMethod</IRI>
+        <Literal datatypeIRI="&xsd;string">Weight Generation Interpolation Method</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Windows</IRI>
+        <Literal datatypeIRI="&xsd;string">Windows</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#Workflow</IRI>
+        <Literal datatypeIRI="&xsd;string">Workflow</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Workflow</IRI>
+        <Literal datatypeIRI="&xsd;string">Workflow</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#accumulation</IRI>
+        <Literal datatypeIRI="&xsd;string">Accumulation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#adaptive</IRI>
+        <Literal datatypeIRI="&xsd;string">Adaptive</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#adaptive_coupling_frequency</IRI>
+        <Literal datatypeIRI="&xsd;string">Adaptive coupling frequency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#an_identifier_such_as_an_integer_or_string</IRI>
+        <Literal datatypeIRI="&xsd;string">An identifier such as an integer or string</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#an_instance_of_a_Fortran_derived_type_or_C_struct</IRI>
+        <Literal datatypeIRI="&xsd;string">An instance of a Fortran derived type or C struct</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#an_object_in_an_object-oriented_language</IRI>
+        <Literal datatypeIRI="&xsd;string">An object in an object oriented language</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#arbitrary_user_assigned</IRI>
+        <Literal datatypeIRI="&xsd;string">Arbitrary user assigned</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#averaging</IRI>
+        <Literal datatypeIRI="&xsd;string">Averaging</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#between_different_decompositions</IRI>
+        <Literal datatypeIRI="&xsd;string">Between different decompositions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#bilinear_trilinear</IRI>
+        <Literal datatypeIRI="&xsd;string">Bilinear trilinear</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#bilinear_trilinear_waim</IRI>
+        <Literal datatypeIRI="&xsd;string">Bilinear trilinear waim</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#bundles</IRI>
+        <Literal datatypeIRI="&xsd;string">Bundles</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#by_changing_configuration_metadata</IRI>
+        <Literal datatypeIRI="&xsd;string">By changing configuration metadata</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#by_changing_model_field_data_dependencies</IRI>
+        <Literal datatypeIRI="&xsd;string">By changing model field data dependencies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#by_specializing_a_generic_driver</IRI>
+        <Literal datatypeIRI="&xsd;string">By specializing a generic driver</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c</IRI>
+        <Literal datatypeIRI="&xsd;string">C</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c_clb</IRI>
+        <Literal datatypeIRI="&xsd;string">C clb</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cloud</IRI>
+        <Literal datatypeIRI="&xsd;string">Cloud</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cluster</IRI>
+        <Literal datatypeIRI="&xsd;string">Cluster</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#completion_of_coupling_fields_with_external_data</IRI>
+        <Literal datatypeIRI="&xsd;string">Completion of coupling fields with external data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#comprehensive_API_Reference</IRI>
+        <Literal datatypeIRI="&xsd;string">Comprehensive API reference</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#conditional_target</IRI>
+        <Literal datatypeIRI="&xsd;string">Conditional target</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#coupler_is_a_seperate_executable</IRI>
+        <Literal datatypeIRI="&xsd;string">Coupler is a seperate executable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cplusplus</IRI>
+        <Literal datatypeIRI="&xsd;string">Cplusplus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#cplusplus_clb</IRI>
+        <Literal datatypeIRI="&xsd;string">Cplusplus clb</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#csharp</IRI>
+        <Literal datatypeIRI="&xsd;string">Csharp</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#csharp_clb</IRI>
+        <Literal datatypeIRI="&xsd;string">Csharp clb</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#described_globally</IRI>
+        <Literal datatypeIRI="&xsd;string">Described globally</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#described_locally</IRI>
+        <Literal datatypeIRI="&xsd;string">Described locally</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#desktop_laptop</IRI>
+        <Literal datatypeIRI="&xsd;string">Desktop laptop</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#directly_in_source_code_eg_API_calls</IRI>
+        <Literal datatypeIRI="&xsd;string">Directly in source code eg API calls</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#email</IRI>
+        <Literal datatypeIRI="&xsd;string">Email</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#entire_application_is_a_single_executable</IRI>
+        <Literal datatypeIRI="&xsd;string">Entire application is a single executable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#event_based</IRI>
+        <Literal datatypeIRI="&xsd;string">Event based</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#example_application_code</IRI>
+        <Literal datatypeIRI="&xsd;string">Example application code</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#execution_methods</IRI>
+        <Literal datatypeIRI="&xsd;string">Execution methods</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#execution_methods_sq</IRI>
+        <Literal datatypeIRI="&xsd;string">Execution methods sq</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#explicit_control_control_thread_is_in_a_driver_written_mostly_entirely_by_the_user</IRI>
+        <Literal datatypeIRI="&xsd;string">Explicit control control thread is in a driver written mostly entirely by the user</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#explicit_control_control_thread_is_in_a_generic_driver</IRI>
+        <Literal datatypeIRI="&xsd;string">Explicit control control thread is in a generic driver</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#explicit_control_control_thread_is_in_a_generic_driver_that_can_be_customized_specialized_by_user</IRI>
+        <Literal datatypeIRI="&xsd;string">Explicit control control thread is in a generic driver that can be customized specialized by user</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#extrapolation</IRI>
+        <Literal datatypeIRI="&xsd;string">Extrapolation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#extrapolation_outside_source_domain</IRI>
+        <Literal datatypeIRI="&xsd;string">Extrapolation outside source domain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#extrapolation_outside_source_domain_waim</IRI>
+        <Literal datatypeIRI="&xsd;string">Extrapolation outside source domain waim</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#field_combination_merging</IRI>
+        <Literal datatypeIRI="&xsd;string">Field combination merging</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#file</IRI>
+        <Literal datatypeIRI="&xsd;string">File</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#file_to_file</IRI>
+        <Literal datatypeIRI="&xsd;string">File to file</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#first_order_conservative</IRI>
+        <Literal datatypeIRI="&xsd;string">First order conservative</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#first_order_conservative_wain</IRI>
+        <Literal datatypeIRI="&xsd;string">First order conservative waim</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#fortran</IRI>
+        <Literal datatypeIRI="&xsd;string">Fortran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#fortran_clb</IRI>
+        <Literal datatypeIRI="&xsd;string">Fortran clb</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#forum</IRI>
+        <Literal datatypeIRI="&xsd;string">Forum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#from_constant_or_function</IRI>
+        <Literal datatypeIRI="&xsd;string">From constant or function</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#from_file</IRI>
+        <Literal datatypeIRI="&xsd;string">From file</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#from_memory</IRI>
+        <Literal datatypeIRI="&xsd;string">From memory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#great_circle</IRI>
+        <Literal datatypeIRI="&xsd;string">Great circle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty IRI="#XMLMapping"/>
         <IRI>#hasBasicCapabilities</IRI>
         <Literal datatypeIRI="&xsd;string">BasicCapabilities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasClientLanguageBindings</IRI>
+        <Literal datatypeIRI="&xsd;string">ClientLanguageBindings</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasControlRegime</IRI>
+        <Literal datatypeIRI="&xsd;string">ControlRegime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasCoordinateDimensions</IRI>
+        <Literal datatypeIRI="&xsd;string">CoordinateDimensions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasCoordinateSystems</IRI>
+        <Literal datatypeIRI="&xsd;string">CoordinateSystems</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasDataExchangeMechanism</IRI>
+        <Literal datatypeIRI="&xsd;string">DataExchangeMechanism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasDesignIntent</IRI>
+        <Literal datatypeIRI="&xsd;string">DesignIntent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasDeveloperDocumentation</IRI>
+        <Literal datatypeIRI="&xsd;string">DeveloperDocumentation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasDocumentationTypes</IRI>
+        <Literal datatypeIRI="&xsd;string">Documentation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasDriverCustomization</IRI>
+        <Literal datatypeIRI="&xsd;string">DriverCustomization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasExternalSoftwareDependencies</IRI>
+        <Literal datatypeIRI="&xsd;string">ExternalSoftwareDependencies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasFieldPrimings</IRI>
+        <Literal datatypeIRI="&xsd;string">FieldPriming</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasGridDescriptionOptions</IRI>
+        <Literal datatypeIRI="&xsd;string">GridDescriptionOptions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasImplementationLanguages</IRI>
+        <Literal datatypeIRI="&xsd;string">ImplementationLanguage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasLicence</IRI>
+        <Literal datatypeIRI="&xsd;string">License</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasMaxPolygonEdges</IRI>
+        <Literal datatypeIRI="&xsd;string">MaxPolygonEdges</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasMetaDataOutput</IRI>
+        <Literal datatypeIRI="&xsd;string">MetaDataOutput</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasMetaDataOutputFormat</IRI>
+        <Literal datatypeIRI="&xsd;string">MetaDataOutputFormat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasModelComponentAbstraction</IRI>
+        <Literal datatypeIRI="&xsd;string">ModelComponentAbstraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasModelComponentRef</IRI>
+        <Literal datatypeIRI="&xsd;string">ModelComponentRef</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasModelExecutionConcurrency</IRI>
+        <Literal datatypeIRI="&xsd;string">ModelExecutionConcurrency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasModelMetaDataFlow</IRI>
+        <Literal datatypeIRI="&xsd;string">ModelMetaDataFlow</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasModelMetaDataProvision</IRI>
+        <Literal datatypeIRI="&xsd;string">ModelMetaDataProvision</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasModelMetaDataProvisionFormats</IRI>
+        <Literal datatypeIRI="&xsd;string">ModelMetaDataProvisionFormats</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasModelMetaDataRuntimeQuery</IRI>
+        <Literal datatypeIRI="&xsd;string">ModelMetaDataRuntimeQuery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasModelMetaDataStaticQuery</IRI>
+        <Literal datatypeIRI="&xsd;string">ModelMetaDataStaticQuery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasMultiExecutables</IRI>
+        <Literal datatypeIRI="&xsd;string">MultiExecutable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasOptions</IRI>
+        <Literal datatypeIRI="&xsd;string">RepresentationOptions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasParallelLibraries</IRI>
+        <Literal datatypeIRI="&xsd;string">ParallelLibraries</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasParallelism</IRI>
+        <Literal datatypeIRI="&xsd;string">Parallelism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasSparseMatrixMultiplication</IRI>
+        <Literal datatypeIRI="&xsd;string">SparseMatrixMultiplication</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasTests</IRI>
+        <Literal datatypeIRI="&xsd;string">Tests</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasTopologicalDimensions</IRI>
+        <Literal datatypeIRI="&xsd;string">TopologicalDimensions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasTopologicalStructure</IRI>
+        <Literal datatypeIRI="&xsd;string">TopologicalStructure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasTransportDecompositionSpec</IRI>
+        <Literal datatypeIRI="&xsd;string">TransportDecompositionSpec</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasTransportDecompositionType</IRI>
+        <Literal datatypeIRI="&xsd;string">TransportDecompositionType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasTransportOptions</IRI>
+        <Literal datatypeIRI="&xsd;string">TransportOptions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasUserSupportTypes</IRI>
+        <Literal datatypeIRI="&xsd;string">UserSupportTypes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasWeightApplicationExecutionTypes</IRI>
+        <Literal datatypeIRI="&xsd;string">WeightApplicationExecution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasWeightApplicationInterpolationMethods</IRI>
+        <Literal datatypeIRI="&xsd;string">WeightApplicationInterpolationMethods</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasWeightGenerationExecutionTypes</IRI>
+        <Literal datatypeIRI="&xsd;string">WeightGenerationExecution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#hasWeightGenerationInterpolationMethods</IRI>
+        <Literal datatypeIRI="&xsd;string">WeightGenerationInterpolationMethod</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#higher_order_conservative</IRI>
+        <Literal datatypeIRI="&xsd;string">Higher order conservative</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#higher_order_conservative_wain</IRI>
+        <Literal datatypeIRI="&xsd;string">Higher order conservative waim</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#higher_order_non_conservative</IRI>
+        <Literal datatypeIRI="&xsd;string">Higher order non conservative</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#higher_order_non_conservative_wain</IRI>
+        <Literal datatypeIRI="&xsd;string">Higher order non conservative waim</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#implicit_control_model_retain_control_and_control_sequence_is_determined_by_data_dependencies</IRI>
+        <Literal datatypeIRI="&xsd;string">Implicit control model retain control and control sequence is determined by data dependencies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#in_a_standardized_format</IRI>
+        <Literal datatypeIRI="&xsd;string">In a standardized format</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#in_an_infrastructure_specific_format</IRI>
+        <Literal datatypeIRI="&xsd;string">In an infrastructure specific format</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#interpolation_linear</IRI>
+        <Literal datatypeIRI="&xsd;string">Interpolation linear</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#interpolation_quadratic</IRI>
+        <Literal datatypeIRI="&xsd;string">Interpolation quadratic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#interpolation_stairstep</IRI>
+        <Literal datatypeIRI="&xsd;string">Interpolation stairstep</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#issue_tracker</IRI>
+        <Literal datatypeIRI="&xsd;string">Issue tracker</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#java</IRI>
+        <Literal datatypeIRI="&xsd;string">Java</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#java_clb</IRI>
+        <Literal datatypeIRI="&xsd;string">Java clb</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#land_ocean_coastline_consistency_checking</IRI>
+        <Literal datatypeIRI="&xsd;string">Land ocean coastline consistency checking</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#list_of_input_physical_fields</IRI>
+        <Literal datatypeIRI="&xsd;string">List of input physical fields</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#list_of_input_physical_fields_sq</IRI>
+        <Literal datatypeIRI="&xsd;string">List of input physical fields sq</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#list_of_output_physical_fields</IRI>
+        <Literal datatypeIRI="&xsd;string">List of output physical fields</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#list_of_output_physical_fields_sq</IRI>
+        <Literal datatypeIRI="&xsd;string">List of output physical fields sq</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#location_stream</IRI>
+        <Literal datatypeIRI="&xsd;string">Location stream</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#logically_rectangular</IRI>
+        <Literal datatypeIRI="&xsd;string">Logically rectangular</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#masking</IRI>
+        <Literal datatypeIRI="&xsd;string">Masking</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#measuresDistanceIn</IRI>
+        <Literal datatypeIRI="&xsd;string">DistanceMeasure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#mechanism_for_community_contribution</IRI>
+        <Literal datatypeIRI="&xsd;string">Mechanism for community contribution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#mediates_between_parallel_and_serial_codes</IRI>
+        <Literal datatypeIRI="&xsd;string">Mediates between parallel and serial codes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#mediates_between_parallel_and_serial_codes</IRI>
+        <Literal datatypeIRI="&xsd;string">Mediates between parallel and serial codes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#metadata_flows_from_driver_infrastructure_to_model_components</IRI>
+        <Literal datatypeIRI="&xsd;string">Metadata flows from driver infrastructure to model components</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#metadata_flows_from_model_components_to_infrastructure_driver</IRI>
+        <Literal datatypeIRI="&xsd;string">Metadata flows from model components to infrastructure driver</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#minimum_or_maximum_in_time</IRI>
+        <Literal datatypeIRI="&xsd;string">Minimum or maximum in time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#models_are_seperate_executables</IRI>
+        <Literal datatypeIRI="&xsd;string">Models are seperate executables</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#models_can_execute_concurrently</IRI>
+        <Literal datatypeIRI="&xsd;string">Models can execute concurrently</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#models_can_execute_sequentially</IRI>
+        <Literal datatypeIRI="&xsd;string">Models can execute sequentially</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#multi_tile</IRI>
+        <Literal datatypeIRI="&xsd;string">Multi tile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#multiprocessing</IRI>
+        <Literal datatypeIRI="&xsd;string">Multiprocessing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#multithreading</IRI>
+        <Literal datatypeIRI="&xsd;string">Multithreading</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#nearest_neighbour</IRI>
+        <Literal datatypeIRI="&xsd;string">Nearest neighbour</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#nearest_neighbour_waim</IRI>
+        <Literal datatypeIRI="&xsd;string">Nearest neighbour waim</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#nesting</IRI>
+        <Literal datatypeIRI="&xsd;string">Nesting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#non_conformal</IRI>
+        <Literal datatypeIRI="&xsd;string">Non conformal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#non_geometrical</IRI>
+        <Literal datatypeIRI="&xsd;string">Non geometrical</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#non_geometrical_waim</IRI>
+        <Literal datatypeIRI="&xsd;string">Non geometrical waim</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#offline_parallel</IRI>
+        <Literal datatypeIRI="&xsd;string">Offline parallel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#offline_serial</IRI>
+        <Literal datatypeIRI="&xsd;string">Offline serial</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#one_D</IRI>
+        <Literal datatypeIRI="&xsd;string">One d</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#one_to_many</IRI>
+        <Literal datatypeIRI="&xsd;string">One to many</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#online</IRI>
+        <Literal datatypeIRI="&xsd;string">Online</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#online_parallel</IRI>
+        <Literal datatypeIRI="&xsd;string">Online parallel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#online_reusable</IRI>
+        <Literal datatypeIRI="&xsd;string">Online reusable</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#online_serial</IRI>
+        <Literal datatypeIRI="&xsd;string">Online serial</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#phone</IRI>
+        <Literal datatypeIRI="&xsd;string">Phone</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#process_to_prioritize_user_requests</IRI>
+        <Literal datatypeIRI="&xsd;string">Process to prioritize user requests</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#properties_of_the_numerical_grid</IRI>
+        <Literal datatypeIRI="&xsd;string">Properties of the numerical grid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#properties_of_the_numerical_grid_sq</IRI>
+        <Literal datatypeIRI="&xsd;string">Properties of the numerical grid sq</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#provides_a_software_framework</IRI>
+        <Literal datatypeIRI="&xsd;string">Provides a software framework</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#provides_a_software_framework</IRI>
+        <Literal datatypeIRI="&xsd;string">Provides a software framework</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#provides_data_structures_for_describing_numerical_grids</IRI>
+        <Literal datatypeIRI="&xsd;string">Provides data structures for describing numerical grids</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#provides_data_structures_for_describing_numerical_grids</IRI>
+        <Literal datatypeIRI="&xsd;string">Provides data structures for describing numerical grids</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#pthreads</IRI>
+        <Literal datatypeIRI="&xsd;string">Pthreads</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#python</IRI>
+        <Literal datatypeIRI="&xsd;string">Python</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#python_clb</IRI>
+        <Literal datatypeIRI="&xsd;string">Python clb</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#read_from_a_configuration_file_in_an_infrastructure-specific_format</IRI>
+        <Literal datatypeIRI="&xsd;string">Read from a configuration file in an infrastructure specific format</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#read_from_configuration_file_in_a_standard_format</IRI>
+        <Literal datatypeIRI="&xsd;string">Read from configuration file in a standard format</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#shared_memory</IRI>
+        <Literal datatypeIRI="&xsd;string">Shared memory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#spherical</IRI>
+        <Literal datatypeIRI="&xsd;string">Spherical</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#straight_line</IRI>
+        <Literal datatypeIRI="&xsd;string">Straight line</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#subroutine_or_method_argument_passing</IRI>
+        <Literal datatypeIRI="&xsd;string">Subroutine or method argument passing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#supportsChangeManagementTypes</IRI>
+        <Literal datatypeIRI="&xsd;string">ChangeManagement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#supportsCompilers</IRI>
+        <Literal datatypeIRI="&xsd;string">SupportedCompilers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#supportsMediation</IRI>
+        <Literal datatypeIRI="&xsd;string">Mediation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#supportsOperatingSystems</IRI>
+        <Literal datatypeIRI="&xsd;string">supportedOperatingSystems</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#supportsPlatforms</IRI>
+        <Literal datatypeIRI="&xsd;string">supportedPlatforms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#supportsRepartitioningTypes</IRI>
+        <Literal datatypeIRI="&xsd;string">Repartitioning</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#supportsTemporals</IRI>
+        <Literal datatypeIRI="&xsd;string">Temporal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XMLMapping"/>
+        <IRI>#supports_parallelism</IRI>
+        <Literal datatypeIRI="&xsd;string">Supports parallelism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#supports_parallelism</IRI>
+        <Literal datatypeIRI="&xsd;string">Supports parallelism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#system_tests</IRI>
+        <Literal datatypeIRI="&xsd;string">System tests</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#system_tests_T</IRI>
+        <Literal datatypeIRI="&xsd;string">System tests T</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#temporal_metadata</IRI>
+        <Literal datatypeIRI="&xsd;string">Temporal metadata</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#temporal_metadata_sq</IRI>
+        <Literal datatypeIRI="&xsd;string">Temporal metadata sq</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#three_D</IRI>
+        <Literal datatypeIRI="&xsd;string">Three d</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#time_stepping_method</IRI>
+        <Literal datatypeIRI="&xsd;string">Time stepping method</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#time_stepping_method_sq</IRI>
+        <Literal datatypeIRI="&xsd;string">Time stepping method sq</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#training_courses</IRI>
+        <Literal datatypeIRI="&xsd;string">Traning courses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#two_D</IRI>
+        <Literal datatypeIRI="&xsd;string">Two d</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ungridded_dimensions</IRI>
+        <Literal datatypeIRI="&xsd;string">Ungridded dimensions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#unit_conversion</IRI>
+        <Literal datatypeIRI="&xsd;string">Unit conversion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#unit_tests</IRI>
+        <Literal datatypeIRI="&xsd;string">Unit tests</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#unit_tests_T</IRI>
+        <Literal datatypeIRI="&xsd;string">Unit tests T</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#unstructured</IRI>
+        <Literal datatypeIRI="&xsd;string">Unstructured</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#user_guide_tutorials</IRI>
+        <Literal datatypeIRI="&xsd;string">User guide tutorials</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#vector_fields</IRI>
+        <Literal datatypeIRI="&xsd;string">Vector fields</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#version_control</IRI>
+        <Literal datatypeIRI="&xsd;string">Version control</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#web_request</IRI>
+        <Literal datatypeIRI="&xsd;string">Web request</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#workshops</IRI>
+        <Literal datatypeIRI="&xsd;string">Workshops</Literal>
     </AnnotationAssertion>
 </Ontology>
 
