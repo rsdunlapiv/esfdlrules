@@ -103,6 +103,10 @@ public class QuestionnaireResponseParser {
 		}
 	}
 
+	public HashMap<String, List<String>> getPropertiesAndValues() {
+		return propertiesAndValues;
+	}
+
 	public static void main(String args[]) {
 		QuestionnaireResponseParser QRP = new QuestionnaireResponseParser(
 				"questionnaire_output.xml");
