@@ -35,6 +35,12 @@ public class QuestionnaireResponseParser {
 		}
 	}
 
+	public String getModelingInfrastructureName() {
+		Element rootNode = document.getRootElement();
+		Element valuesElement = getChildNode(rootNode, "shortName");
+		return valuesElement.getText();
+	}
+
 	public Element getRootNode() {
 		Element rootNode = document.getRootElement();
 		return rootNode;
