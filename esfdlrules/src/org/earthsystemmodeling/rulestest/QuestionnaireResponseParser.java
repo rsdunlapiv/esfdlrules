@@ -37,7 +37,7 @@ public class QuestionnaireResponseParser {
 
 	public String getModelingInfrastructureName() {
 		Element rootNode = document.getRootElement();
-		Element valuesElement = getChildNode(rootNode, "shortName");
+		Element valuesElement = rootNode.getChild("shortName");
 		return valuesElement.getText();
 	}
 
@@ -46,49 +46,29 @@ public class QuestionnaireResponseParser {
 		return rootNode;
 	}
 
-	public List<Element> getChildNodes(Element parent) {
-		List<Element> childNodes = parent.getChildren();
-		return childNodes;
-	}
-
-	public Element getChildNode(Element parent, String childName) {
-		Element childNode = parent.getChild(childName);
-		return childNode;
-	}
-
-	public List<String> getValues(Element property) {
-		List<String> valuesList = new ArrayList<String>();
-		Element valuesElement = getChildNode(property, "values");
-		List<Element> values = getChildNodes(valuesElement);
-		for (Element e : values) {
-			valuesList.add(e.getText());
-		}
-		return valuesList;
-	}
-
 	public void parsePropertiesAndValues() {
 		Element rootNode = getRootNode();
-		Element properties = getChildNode(rootNode, "properties");
-		List<Element> propertyTags = getChildNodes(properties);
+		Element properties = rootNode.getChild("properties");
+		List<Element> propertyTags = properties.getChildren();
 		for (Element e : propertyTags) {
 			Element Values;
-			String shortName = getChildNode(e, "shortName").getText();
+			String shortName = e.getChild("shortName").getText();
 			List<Element> valueTags;
 			List<String> valuesList = new ArrayList<String>();
-			if ((Values = getChildNode(e, "values")) != null) {
-				valueTags = getChildNodes(Values);
+			if ((Values = e.getChild("values")) != null) {
+				valueTags = Values.getChildren();
 				for (Element v : valueTags) {
 					valuesList.add(v.getText());
 				}
 				propertiesAndValues.put(shortName, valuesList);
 			} else {
-				Element subPropertiesTag = getChildNode(e, "subProperties");
-				List<Element> subProperties = getChildNodes(subPropertiesTag);
+				Element subPropertiesTag = e.getChild("subProperties");
+				List<Element> subProperties = subPropertiesTag.getChildren();
 				for (Element v : subProperties) {
-					shortName = getChildNode(v, "shortName").getText();
+					shortName = v.getChild("shortName").getText();
 					valuesList = new ArrayList<String>();
-					Element valuesTag = getChildNode(v, "values");
-					valueTags = getChildNodes(valuesTag);
+					Element valuesTag = v.getChild("values");
+					valueTags = valuesTag.getChildren();
 					for (Element m : valueTags) {
 						valuesList.add(m.getText());
 					}
