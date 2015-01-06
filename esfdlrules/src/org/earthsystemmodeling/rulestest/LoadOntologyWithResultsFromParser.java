@@ -30,14 +30,10 @@ public class LoadOntologyWithResultsFromParser {
 				.getPropertiesAndValues();
 		try {
 			OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
-			OWLOntologyManager manager_for_output = OWLManager
-					.createOWLOntologyManager();
 			File file = new File("owl/ESFDL_Ontology.owl");
 			OWLOntology owlOntology = manager
 					.loadOntologyFromOntologyDocument(file);
 			IRI ontologyIRI = owlOntology.getOntologyID().getOntologyIRI();
-			OWLOntology owlOntology1 = manager_for_output
-					.createOntology(ontologyIRI);
 			String modellingInfrastructureName = qrp
 					.getModelingInfrastructureName();
 			OWLDataFactory factory = manager.getOWLDataFactory();
@@ -65,9 +61,9 @@ public class LoadOntologyWithResultsFromParser {
 						OWLDataPropertyAssertionAxiom dataPropAsserAxiom = factory
 								.getOWLDataPropertyAssertionAxiom(dataPropObj,
 										modelInfraIndividal, value);
-						AddAxiom addax = new AddAxiom(owlOntology1,
+						AddAxiom addax = new AddAxiom(owlOntology,
 								dataPropAsserAxiom);
-						manager_for_output.applyChange(addax);
+						manager.applyChange(addax);
 						System.out.println(dataPropAsserAxiom);
 					}
 				} else {
@@ -82,14 +78,14 @@ public class LoadOntologyWithResultsFromParser {
 						OWLObjectPropertyAssertionAxiom objPropAsserAxiom = factory
 								.getOWLObjectPropertyAssertionAxiom(propObj,
 										modelInfraIndividal, valIndividual);
-						AddAxiom addax = new AddAxiom(owlOntology1,
+						AddAxiom addax = new AddAxiom(owlOntology,
 								objPropAsserAxiom);
-						manager_for_output.applyChange(addax);
+						manager.applyChange(addax);
 						System.out.println(objPropAsserAxiom);
 					}
 				}
 			}
-			manager_for_output.saveOntology(owlOntology1, new FileOutputStream(
+			manager.saveOntology(owlOntology, new FileOutputStream(
 					"EFFDL_From_Questionnaire.owl"));
 		} catch (Exception e) {
 			e.printStackTrace();
