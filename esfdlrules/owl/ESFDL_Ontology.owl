@@ -108,7 +108,10 @@
         <Class IRI="#ModelMetadataProvisionFormats"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ModelingInfrastructureQ"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MultiExecutable"/>
@@ -851,6 +854,18 @@
     <Declaration>
         <AnnotationProperty IRI="#XMLMapping"/>
     </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#ModelingInfrastructureQ"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#ModelingInfrastructure"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasBasicCapabilities"/>
+                <ObjectOneOf>
+                    <NamedIndividual IRI="#AngleConversion"/>
+                </ObjectOneOf>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
     <DisjointClasses>
         <Class IRI="#BasicCapabilities"/>
         <Class IRI="#ChangeManagement"/>
@@ -880,7 +895,7 @@
         <Class IRI="#ModelMetadataFlow"/>
         <Class IRI="#ModelMetadataProvision"/>
         <Class IRI="#ModelMetadataProvisionFormats"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
         <Class IRI="#MultiExecutable"/>
         <Class IRI="#Opensource"/>
         <Class IRI="#Options"/>
@@ -929,7 +944,7 @@
         <NamedIndividual IRI="#Build_and_or_Configuration_management"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
         <NamedIndividual IRI="#CSDMS"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -945,7 +960,7 @@
         <NamedIndividual IRI="#Defines_an_interface_for_models"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
         <NamedIndividual IRI="#ESMF"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -965,7 +980,7 @@
         <NamedIndividual IRI="#Linux"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
         <NamedIndividual IRI="#MCT"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -985,7 +1000,7 @@
         <NamedIndividual IRI="#Mac"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
         <NamedIndividual IRI="#OASIS"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1592,6 +1607,11 @@
         <Class IRI="#Support"/>
         <NamedIndividual IRI="#workshops"/>
     </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBasicCapabilities"/>
+        <NamedIndividual IRI="#CSDMS"/>
+        <NamedIndividual IRI="#AngleConversion"/>
+    </ObjectPropertyAssertion>
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#hasControlRegime"/>
     </FunctionalObjectProperty>
@@ -1600,195 +1620,195 @@
     </FunctionalObjectProperty>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasBasicCapabilities"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasChangeManagement"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasClientLanguageBindings"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasControlRegime"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasCoordinateDimensions"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasCoordinateSystem"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasDataExchangeMechanism"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasDecompositionSpecTransport"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasDecompositionTypeTransport"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasDesignIntentGeneral"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasDistanceMeasure"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasDocumentation"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasDriverCustomization"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasExternalSoftwareDependencies"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasFieldPrimingTransport"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasImplementationLanguage"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasLicence"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasMaxPolygonEdges"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasMediation"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasMetaDataOutput"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasMetaDataOutputFormats"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasModelComponentRef"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasModelExecutionConcurrency"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasModelMetadataFlow"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasModelMetadataProvision"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasModelMetadataProvisionFormats"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasModelMetadataRuntimeQuery"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasModelMetadataStaticQuery"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasMultiExecutable"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasOptions"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasOptionsGridDescription"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasOptionsTransport"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasParallelLibrary"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasParallelism"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasRepartitioningTransport"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasSupport"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasSupportedModels"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasSupportedOperatingSystems"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasSupportedPlatforms"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasTemporal"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasTests"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasTopologicalDimensions"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasTopologicalStructure"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasWeightApplicationExecution"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasWeightApplicationInterpolationMethod"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasWeightGenerationExecution"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasWeightGenerationInterpolationMethod"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#supportsCompilers"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasBasicCapabilities"/>
@@ -1992,19 +2012,19 @@
     </FunctionalDataProperty>
     <DataPropertyDomain>
         <DataProperty IRI="#hasDeveloperDocumentation"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasModelComponentAbstraction"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasOpenSource"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasSparseMatrixMultiplication"/>
-        <Class IRI="#ModellingInfrastructure"/>
+        <Class IRI="#ModelingInfrastructure"/>
     </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#hasDeveloperDocumentation"/>
@@ -2299,7 +2319,7 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#ModellingInfrastructure</IRI>
+        <IRI>#ModelingInfrastructure</IRI>
         <Literal datatypeIRI="&xsd;string">Modelling Infrastructure</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
